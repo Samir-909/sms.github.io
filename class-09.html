@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Class-09</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pop.css">
+</head>
+<body>
+    <div align="center" class="Header">
+        <h1><u><i><b>Success Mission School</b><br>
+        <h6>Dalsingsarai,Samastipur,Bihar</h6></i></u></h1>
+    </div>
+
+    <div align="center" id="joine class pop up">
+
+        <button onclick="openPopup()">Join Class</button>
+    
+    <div id="popup-container">
+        <span id="close-button" onclick="closePopup()">X</span>
+        <iframe id="external-website" src="" frameborder="0"></iframe>
+    </div>
+    
+    <script>
+        function openPopup() {
+            // Set the source URL of the external website (Flipkart in this case)
+            document.getElementById('external-website').src = 'https://class-9sms.tiiny.site/';
+            
+            // Show the popup
+            document.getElementById('popup-container').style.display = 'block';
+        }
+    
+        function closePopup() {
+            // Hide the popup
+            document.getElementById('popup-container').style.display = 'none';
+            
+            // Reset the source URL when the popup is closed
+            document.getElementById('external-website').src = '';
+        }
+    </script>
+    
+    </div>
+    
+   
+    
+</body>
+</html>
